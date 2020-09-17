@@ -4,17 +4,15 @@
     <!-- META TAGS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="autor" content="Christopher Montero D'oleo">
-    <meta name="keywords" content="Card Profile Carta Perfil CSS HTML">
+    <meta name="autor" content="Christopher Montero D'oleo" />
+    <meta name="keywords" content="Card Profile Carta Perfil CSS HTML" />
     <title>Profile | Card</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/main.css" />
-    
   </head>
   <body>
     <div class="container">
-
       <!-- CARD -->
       <div class="card">
         <div class="card__background_image"></div>
@@ -22,29 +20,55 @@
         <div class="card__user_info">
           <h1>John Makact</h1>
           <p>Web Developer</p>
-          <button id="btn-hidden-social-network"><a href="#">Contactar</a></button>
+          <button id="btn-hidden-social-network">
+            <a href="#">Contactar</a>
+          </button>
           <div class="social_network" id="social">
-            <a href="#"><img src="src/assets/icons/facebook-black-18dp.svg" alt="" width="35px"></a>
-            <a href="#"><img src="src/assets/icons/email-black-18dp.svg" alt="" width="35px"></a>
-            <a href="#"><img src="src/assets/icons/github-brands.svg" alt="" width="35px"></a>
-            <br>
-            <a href="#" id="btn-back"><img src="src/assets/icons/keyboard_arrow_left-black-18dp.svg" alt="" width="100%"></a>
+            <a href="#"
+              ><img
+                src="src/assets/icons/facebook-black-18dp.svg"
+                alt=""
+                width="35px"
+            /></a>
+            <a href="#"
+              ><img
+                src="src/assets/icons/email-black-18dp.svg"
+                alt=""
+                width="35px"
+            /></a>
+            <a href="#"
+              ><img
+                src="src/assets/icons/github-brands.svg"
+                alt=""
+                width="35px"
+            /></a>
+            <br />
+            <a href="#" id="btn-back"
+              ><img
+                src="src/assets/icons/keyboard_arrow_left-black-18dp.svg"
+                alt=""
+                width="100%"
+            /></a>
           </div>
         </div>
       </div>
-    
-  </div>
+    </div>
 
-  <script>
-    document.querySelector('#btn-hidden-social-network').addEventListener('click', () => {
-      document.querySelector('.social_network').style.display = 'block';
-      document.querySelector('#btn-hidden-social-network').style.display = 'none';
-    })
+    <!-- JS -->
+    <script>
+      document
+        .querySelector("#btn-hidden-social-network")
+        .addEventListener("click", () => {
+          document.querySelector(".social_network").style.display = "block";
+          document.querySelector("#btn-hidden-social-network").style.display =
+            "none";
+        });
 
-    document.querySelector('#btn-back').addEventListener('click',() => {
-      document.querySelector('.social_network').style.display = 'none';
-      document.querySelector('#btn-hidden-social-network').style.display = 'inline';
-    })
-  </script>
+      document.querySelector("#btn-back").addEventListener("click", () => {
+        document.querySelector(".social_network").style.display = "none";
+        document.querySelector("#btn-hidden-social-network").style.display =
+          "inline";
+      });
+    </script>
   </body>
 </html>
