@@ -22,10 +22,29 @@
         <div class="card__user_info">
           <h1>John Makact</h1>
           <p>Web Developer</p>
-          <button>Contactar</button>
+          <button id="btn-hidden-social-network"><a href="#">Contactar</a></button>
+          <div class="social_network" id="social">
+            <a href="#"><img src="src/assets/icons/facebook-black-18dp.svg" alt="" width="35px"></a>
+            <a href="#"><img src="src/assets/icons/email-black-18dp.svg" alt="" width="35px"></a>
+            <a href="#"><img src="src/assets/icons/github-brands.svg" alt="" width="35px"></a>
+            <br>
+            <a href="#" id="btn-back"><img src="src/assets/icons/keyboard_arrow_left-black-18dp.svg" alt="" width="100%"></a>
+          </div>
         </div>
       </div>
     
   </div>
+
+  <script>
+    document.querySelector('#btn-hidden-social-network').addEventListener('click', () => {
+      document.querySelector('.social_network').style.display = 'block';
+      document.querySelector('#btn-hidden-social-network').style.display = 'none';
+    })
+
+    document.querySelector('#btn-back').addEventListener('click',() => {
+      document.querySelector('.social_network').style.display = 'none';
+      document.querySelector('#btn-hidden-social-network').style.display = 'inline';
+    })
+  </script>
   </body>
 </html>

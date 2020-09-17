@@ -2,11 +2,17 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
 .card{
@@ -15,10 +21,6 @@ body{
     height: 450px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.123);
     transition: transform .5s ease;
-}
-
-.card:hover{
-    transform: translate(-5px,-5px);
 }
 
 .card .card__background_image{
@@ -43,7 +45,7 @@ body{
 
 .card .card__user_info{
     position: relative;
-    top: -65px;
+    top: -78px;
     text-align: center;
 }
 
@@ -66,19 +68,50 @@ body{
     border-radius: 17px;
     background-color: black;
     color: #ffffff;
-    transition: background .5s ease;
+    transition: all .5s ease;
 }
 
 .card .card__user_info button:hover{
     padding: .5rem 1rem;
     margin-top: 1rem;
 
-    font-size: medium;
     border-style: none;
     border-radius: 17px;
+    font-size: medium;
     background-color: rgb(48, 48, 48);
     color: #ffffff;
     cursor: pointer;
-    
+    transform: scale(1.1);
+}
+
+.social_network{
+    display: none;
+    transition: display .5 ease;
+}
+
+.social_network img{
+    margin: auto 5px;
+    transition: transform .5s ease;
+}
+
+.social_network img:hover{
+    transform: scale(1.2);
+}
+
+#btn-back{
+    margin-top: .2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+
+    transition: all .5s ease;
+}
+
+#btn-back:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.123);
 }
 
