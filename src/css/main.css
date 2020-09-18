@@ -7,6 +7,7 @@ a {
   color: #ffffff;
 }
 
+
 .container {
   display: flex;
   justify-content: center;
@@ -87,16 +88,28 @@ a {
   transition: display 0.5 ease;
 }
 
-.social_network img {
+.social_network svg {
   margin: auto 5px;
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.social_network img:hover {
+.social_network svg:hover {
   transform: scale(1.2);
 }
 
-#btn-back {
+.social_network .svg-facebook:hover{
+  fill: #3b5998;
+}
+
+.social_network .svg-email:hover{
+  fill: #d34836;
+}
+
+.social_network .svg-github:hover{
+  fill: Black;
+}
+
+.btn-back {
   margin-top: 0.2rem;
   display: inline-flex;
   justify-content: center;
@@ -108,7 +121,7 @@ a {
   transition: all 0.5s ease;
 }
 
-#btn-back:hover {
+.btn-back:hover {
   transform: scale(1.2);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.123);
 }
